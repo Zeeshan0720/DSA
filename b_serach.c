@@ -12,7 +12,6 @@ int binarySearch(int array[], int x, int start, int end)
         if (x < array[mid])
             end = mid - 1;
     }
-
     return -1;
 }
 
@@ -23,7 +22,7 @@ void main()
     printf("Enter size of array : ");
     scanf("%d", &n);
     int array[n];
-    printf("Enter array\n");
+    printf("Enter array \n");
     for (int i = 0; i < n; i++)
     {
         scanf("%d", &array[i]);
@@ -42,8 +41,9 @@ void main()
             }
         }
     }
-    for(int i = 0; i < n; i++){
-        printf("%d ",array[i]);
+    for (int i = 0; i < n; i++)
+    {
+        printf("%d ", array[i]);
     }
     printf("\nEnter Target : ");
     scanf("%d", &x);
